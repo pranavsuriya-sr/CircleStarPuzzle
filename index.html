@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Shade Star Puzzle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Circle Shade Star Puzzle</h1>
+        
+
+        <div class="top-section">
+            <div class="instructions">
+                <h3>Puzzle Rules:</h3>
+                <p>1. You need to place 10 discs on the star points</p>
+                <p>2. Jumps must start from a yellow (unshaded) circle</p>
+                <p>3. Each jump moves in a straight line, skipping exactly one point</p>
+                <p>4. After each jump, place a disc on the landing point</p>
+                <p>5. Points can be revisited but jumps can only start from shaded circles</p>
+                <p>6. The goal is to place all 10 discs on the star points</p>
+            </div>
+            <div class="controls">
+                <h3>Select Starting Point</h3>
+            <input type="text" id="startPoint" maxlength="1" placeholder="A" value="A">
+            <button id="solveButton">Solve Puzzle</button>
+            
+            <div class="buttons">
+                <button id="resetButton">Reset</button>
+                <button id="playButton">Play Animation</button>
+                <button id="pauseButton" disabled>Pause</button>
+                <button id="stepButton">Next Step</button>
+            </div>
+            
+            <div class="speed-controls">
+                <label for="speed">Animation Speed:</label>
+                <input type="range" id="speed" min="1" max="10" value="5">
+            </div>
+            </div>
+        </div>
+        
+        <div class="bottom-section">
+            <div class="puzzle-container">
+                <div class="star" id="star"></div>
+                <!-- <img src="img1.jpg" style="width: 500px; height: 500px; float: right;"> -->
+            </div>
+            <div class="steps" id="steps">
+                <h3>Solution Steps:</h3>
+                <div id="stepsList"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer style="margin-top: 40px; padding: 20px;color: black; text-align: center;">
+        <a href = "https://pranavsuriya.netlify.app/" style="text-decoration: none;"><p>&copy; PS Devs</p></a>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

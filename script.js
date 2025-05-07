@@ -132,7 +132,7 @@ function solvePuzzle() {
         const stepElement = document.createElement('div');
         stepElement.className = 'step';
         stepElement.id = `step-${index}`;
-        stepElement.innerHTML = `${index + 1}. Start from <strong>${step.from}</strong>, jump to <strong>${step.to}</strong>, place disc at <strong>${step.to}</strong>`;
+        stepElement.innerHTML = `${index + 1}. Start from <strong>${step.to}</strong>, jump to <strong>${step.from}</strong>, place disc at <strong>${step.from}</strong>`;
         stepsList.appendChild(stepElement);
     });
     
